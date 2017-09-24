@@ -18,25 +18,36 @@
         <h:form class="form-signup">
         <div class="form-group">
         	<h:outputText value="Enter Your First Name:" />
-            <h:inputText id="fname" class="form-control" required="true"  value="#{registerBean.fname}" requiredMessage="Please enter your first name" />
+            <h:inputText id="fname" class="form-control" required="true"  value="#{register.fname}" requiredMessage="Please enter your first name" />
             <h:message for="fname" class="alert alert-warning" id="reqFname"/>
         </div>
         <div class="form-group">
         	<h:outputText value="Enter Your Last Name:" />
-            <h:inputText id="lname" class="form-control" required="true"  value="#{registerBean.lname}" requiredMessage="Please enter your last name" />
+            <h:inputText id="lname" class="form-control" required="true"  value="#{register.lname}" requiredMessage="Please enter your last name" />
             <h:message for="lname" class="alert alert-warning" id="reqLname"/>
         </div>
+      
         <div class="form-group">
         	<h:outputText value="Enter Your email ID:" />
-            <h:inputText id="email" class="form-control" value="#{registerBean.email}" required="true" requiredMessage="Please enter your email id" />
+            <h:inputText id="email" class="form-control" value="#{register.email}" required="true" requiredMessage="Please enter your email id" />
             <h:message for="email" class="alert alert-warning" id="reqEmail"/>
         </div>
         <div class="form-group">
+        	<h:outputText value="Enter Your phone Number:" />
+            <h:inputText id="contact" class="form-control" value="#{register.contact}" required="true" requiredMessage="Please enter your Contact" />
+            <h:message for="contact" class="alert alert-warning" id="reqContact"/>
+        </div>
+        <div class="form-group">
+        	<h:outputText value="Enter Your Username:" />
+            <h:inputText id="uname" class="form-control" value="#{register.usrname}"  required="true" requiredMessage="Please enter your Username" />
+            <h:message for="uname" class="alert alert-warning" id="reqUname"/>
+        </div>
+        <div class="form-group">
         	<h:outputText value="Enter Password :" />
-            <h:inputSecret id="pwd" class="form-control" value="#{registerBean.password}" required="true" requiredMessage="Please enter your password" />
+            <h:inputSecret id="pwd" class="form-control" value="#{register.pswd}" required="true" requiredMessage="Please enter your password" />
             <h:message for="pwd" class="alert alert-warning" id="reqPass"/>
         </div>
-           	<h:commandButton value="Register"  action="#{registerBean.register()}" class="btn btn-submit btn-block"/>
+           	<h:commandButton value="Register"  action="#{register.register()}" class="btn btn-submit btn-block"/>
             <h:outputLink value="Login.xhtml" class="btn btn-default btn-block">Home</h:outputLink>
         </h:form>
 </h:body>

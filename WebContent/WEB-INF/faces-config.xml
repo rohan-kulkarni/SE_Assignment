@@ -10,8 +10,8 @@
 		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<managed-bean>
-		<managed-bean-name>registerBean</managed-bean-name>
-		<managed-bean-class>com.login.RegisterBean</managed-bean-class>
+		<managed-bean-name>register</managed-bean-name>
+		<managed-bean-class>com.login.Register</managed-bean-class>
 		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
